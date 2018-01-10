@@ -36,3 +36,25 @@ ctx.stroke();
 ```
 
 After each stroke update the `lastX` and `lastY` variables. Also, set the `mousedown` event listener so that before someone does a mousemove update `lastX` and `lastY`so you don't always start from 0.
+
+### HSL (Hue, Saturation, Lightness)
+
+Set the variable `hue` to be 0 initially.
+Set `strokeStyle` to `hsl(${hue}, 100%, 50%)`.
+Increment `hue` at the end of the `draw` function.
+If `hue` goes over 360 you ca reset it to zero.
+
+You can set `lienWidth` to change when `hue` changes.
+
+Alternatively, you can set `direction` to `true` (so `lineWidth` is increasing) and use an if statement to flip the direction if `lineWidth` goes over 100 or under 1.
+
+```js
+if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
+  direction = !direction;
+}
+if (direction) {
+  ctx.lineWidth++;
+} else {
+  ctx.lineWidth--;
+}
+```
