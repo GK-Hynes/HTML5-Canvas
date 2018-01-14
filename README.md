@@ -1,4 +1,4 @@
-# HTML5 Canvas
+# [HTML5 Canvas](https://gk-hynes.github.io/html5-canvas/)
 
 A HTML5 canvas to play with. Built for Wes Bos'
 [JavaScript 30](https://javascript30.com/) course.
